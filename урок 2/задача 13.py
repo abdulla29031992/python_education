@@ -7,16 +7,29 @@
 # Каждое число – среднесуточная температура в соответствующий день. Температуры – целые числа и лежат в диапазоне от –50 до 50
 # Input: 6 -> -20 30 -40 50 10 -10 Output: 2
 
-n = int(input())
-s = list(input().split(' '))
-j=0
-k=0
-for i in range(n):
-    a = int(s[i])
-    if a>0:
-        j=j+1
-    else:
-        j=0
-    if j>k:
-        k=j
-print(k)
+import random
+
+def count_plus_day(all_count_day):
+    count_day = 0
+    max_day = count_day
+    for i in range(all_count_day):
+        grad_day = random.randrange(-50,50)
+        print(grad_day, end = " ")
+        if grad_day < 1:
+            if max_day < count_day:
+                max_day = count_day
+            count_day = 0
+        else:
+            count_day += 1
+    if max_day < count_day:
+        max_day = count_day
+    print(end = "\n")
+    return max_day
+
+
+try:
+    number = int(input("Введите общее кол-во дней: "))
+
+    print(count_plus_day(number))
+except:
+    print("Ввели неверные данные")
