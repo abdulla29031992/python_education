@@ -170,7 +170,6 @@
 # dr = b.difference(a) 
 # q=a.union(b).difference(a.intersection(b)) # {1, 21, 3, 13}
 
-a = {1,2,3}
-
-b = frozenset(a)
-print(b)
+# a = {1,2,3}
+# b = frozenset(a)
+# print(b)
