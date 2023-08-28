@@ -5,19 +5,34 @@
 # строках записаны N целых чисел Ai
 # . Последняя строка содержит число X
 
-lst = []
-n = int(input("N> "))
-for i in range(n):
-    lst.append(int(input(f"{i+1}: ")))
-x = int(input("X> "))
-print("Count X>",lst.count(x))
+# Вариант 1
+# lst = []
+# n = int(input("N> "))
+# for i in range(n):
+#     lst.append(int(input(f"{i+1}: ")))
+# x = int(input("X> "))
+# print("Count X>",lst.count(x))
 
-# count=0 вариант подсчета перебором
+
+# Ваиант 2
+# count=0 #вариант подсчета перебором
 # for i in lst:
-#     if i==x:
+#     if i== x:
 #         count+=1
 # print(count)
 
+
+# Ваиант 3
 # A = [int(i) for i in input().split()] #заполним список
 # X = int(input()) #пользователь вводит число, количество вхождений которого нужно подсчитать
 # print(A.count(X)) #выводим количество вхождений числа X в список A
+
+
+# Ваиант 4
+list_1 = [1, 2, 3, 4, 5]
+k = 3
+count = 0
+for i in range(len(list_1)):
+    if list_1[i] == k:
+        count += 1
+print(count)
