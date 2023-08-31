@@ -3,3 +3,12 @@
 # Примечание. В программе запрещается объявлять массивы и использовать циклы (даже для ввода и вывода).
 # Input: 2 -> 3 4 
 # Output: 4 3
+
+def recr(n):
+    a=input()
+    if n==1:
+        return a
+    return recr(n-1)+a
+
+n=int(input())
+print(recr(n))
