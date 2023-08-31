@@ -3,10 +3,29 @@
 # Input: 5 
 # Output: yes
 
-def Prime(n):
-    d = 2
-    while n % d != 0:
-        d += 1
-    return d == n
+# variant 1
+# def Prime(n):
+#     d = 2
+#     while n % d != 0:
+#         d += 1
+#     return d == n
 
-print(Prime(5))
+# print(Prime(2))
+
+
+
+#  variant 2
+
+# def check_num(n, i):
+
+#     if i > n - 1:
+#         return "yes"
+#     elif n % i == 0:
+#         return 'no'
+    
+#     return check_num(n, i + 1)
+    
+# # num = int(input("Input num: "))
+# num = 1
+
+# print(check_num(num, 5))
