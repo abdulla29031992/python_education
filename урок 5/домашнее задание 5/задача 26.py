@@ -3,6 +3,8 @@
 
 # A = 3; B = 5 -> 243 (35) A = 2; B = 3 -> 8
 
+# variant 1
+
 def recr(a, b):
     if b == 1:
         return a
@@ -12,3 +14,11 @@ def recr(a, b):
 a = int(input("A = "))
 b = int(input("B = "))
 print(recr(a, b))
+
+
+#variant 2
+
+def f(a, b):
+  if b == 0:
+    return 1
+  return f(a, b - 1) * a
