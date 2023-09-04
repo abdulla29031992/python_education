@@ -16,3 +16,14 @@ for i in range(len(list)):
             count += 1
 
 print(count)
+
+
+#  variant 2
+
+# import random
+
+#n = int(input("Введите размер массива: "))
+#array = [random.randint(0,4) for _ in range(5)]
+
+# print(array := [1, 2, 3, 2, 3, 2, 2, 2, 3,3])
+# print(sum([array.count(x)//2 for x in set(array)]))
