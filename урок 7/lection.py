@@ -75,3 +75,52 @@
 # print(res)
 
 
+
+# list_1 = [x for x in range(1, 20)]
+# print(list_1)
+
+# list_1 = (lambda x: x + 10, list_1)
+# print(list_1) 
+
+
+# Задача: C клавиатуры вводится некий набор чисел, в качестве разделителя используется пробел. 
+# Этот набор чисел будет считан в качестве строки. Как превратить list строк в list чисел?
+
+# data = '2 3 5 6 7'
+# print(data)
+# data = data.split()
+# print(data)
+
+# data = '2 3 5 6 7'
+# data = list(map(int, data.split()))
+# print(data)
+
+
+# data = [15, 65, 9, 36, 175]
+# res = list(filter(lambda x : x % 10 == 5, data))
+# print(res)
+
+
+
+#  РАБОТА С ФАЙЛАМИ
+
+# colors = ['red', 'green', 'blue']
+# data = open('file.txt', 'a') # здесь указываем режим, в котором будем работать 
+# data.writelines(colors) # разделителей не будет
+# data.close()
+
+
+# with open('file.txt', 'w') as data: 
+#     data.write('line 1\n') 
+#     data.write('line 2\n')
+
+# path = 'file.txt' 
+# data = open(path, 'r') 
+# for line in data:
+#     print(line) 
+# data.close()
+
+# colors = ['red', 'green', 'blue']
+# data = open('file.txt', 'w') 
+# data.writelines(colors) # разделителей не будет
+# data.close()
